@@ -25,14 +25,14 @@ export async function POST (Request: NextRequest){
         })
 
         return NextResponse.json(
-            {message: "User registered Successfully"}
+            {message: "User registered Successfully"},
             {status: 400}
         )
 
     } catch (error) {
         console.error("Registration error", error)
         NextResponse.json(
-            {error: "Regestration Failed"}
+            {error: "Regestration Failed"},
             {status: 400}
         )
     }
