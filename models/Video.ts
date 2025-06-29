@@ -42,6 +42,6 @@ const videoSchema = new Schema<IVideo>(
     {timestamps: true,}
 );
 
-const Video = models.Video || model<IVideo>('User', videoSchema); //if model already exists, use it, otherwise create a new one
+const Video = models.Video || model<IVideo>('Video', videoSchema); //if model already exists, use it, otherwise create a new one
 
 export default Video; //export the User model
